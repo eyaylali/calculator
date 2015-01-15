@@ -36,9 +36,10 @@ def evaluate(list2):
 
 
 def main():
-	entry = raw_input("> ")
-	pass
-
+    string = raw_input("> ")
+    split_string = consume_input(string)
+    output = evalulate(split_string)
+    print output
 
 if __name__ == '__main__':
     main()
