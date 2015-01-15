@@ -4,7 +4,7 @@ calculator.py
 Using our arithmetic.py file from Exercise02, create the
 calculator program yourself in this file.
 """
-from arithmetic.py import *
+from arithmetic import *
 
 def consume_input(entry):
     list1 = entry.split(" ")
@@ -36,10 +36,11 @@ def evaluate(list2):
 
 
 def main():
-    string = raw_input("> ")
-    split_string = consume_input(string)
-    output = evalulate(split_string)
-    print output
+    while True:
+        string = raw_input("> ")
+        split_string = consume_input(string)
+        output = evaluate(split_string)
+        print output
 
 if __name__ == '__main__':
     main()
